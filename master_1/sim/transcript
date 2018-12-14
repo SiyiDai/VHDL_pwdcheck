@@ -1,0 +1,58 @@
+# //  ModelSim SE-64 10.6b May 25 2017Linux 4.15.0-34-generic
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+vsim work.master_tb
+# vsim work.master_tb 
+# Start time: 16:52:21 on Dec 11,2018
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.master_tb(master_tb_a)#1
+# Loading work.master_e(master_a)#1
+add wave -position end  sim:/master_tb/clk_i
+add wave -position end  sim:/master_tb/rst_i
+add wave -position end  sim:/master_tb/rx_i
+add wave -position end  sim:/master_tb/sw1
+add wave -position end  sim:/master_tb/sw2
+add wave -position end  sim:/master_tb/l_o
+add wave -position end  sim:/master_tb/pas_o
+
+run 50 ms
+# ** Note: Re-set of the system!
+#    Time: 5 ns  Iteration: 0  Instance: /master_tb
+# ** Note: First password sent!
+#    Time: 8664 us  Iteration: 0  Instance: /master_tb
+# ** Note: Door opens now! SW: 01
+#    Time: 8664 us  Iteration: 0  Instance: /master_tb
+# ** Note: Second password sent!
+#    Time: 17328 us  Iteration: 0  Instance: /master_tb
+# ** Note: Door opens now! SW: 00
+#    Time: 17328 us  Iteration: 0  Instance: /master_tb
+# ** Note: Re-set of the system because of parity!
+#    Time: 25800010 ns  Iteration: 0  Instance: /master_tb
+# ** Note: Third password sent!
+#    Time: 25992 us  Iteration: 0  Instance: /master_tb
+# ** Note: Wrong parity! Door is closed!
+#    Time: 25992 us  Iteration: 0  Instance: /master_tb
+# ** Note: Fourth password sent!
+#    Time: 34656 us  Iteration: 0  Instance: /master_tb
+# ** Note: Wrong switch! Door is closed!
+#    Time: 34656 us  Iteration: 0  Instance: /master_tb
+# ** Note: Door opens! SW: 01
+#    Time: 43320 us  Iteration: 0  Instance: /master_tb
+# ** Note: Fifth password sent!
+#    Time: 43320 us  Iteration: 0  Instance: /master_tb
+# End time: 16:52:50 on Dec 11,2018, Elapsed time: 0:00:29
+# Errors: 0, Warnings: 0
