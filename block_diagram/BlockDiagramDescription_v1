@@ -1,0 +1,19 @@
+In total we have five inputs-signal from microcontroller, signal for clock, signal for reset and two signals for switch. The inputs will be passed to the diagram includes baud rate generator, clock divider, UART, parity check, memory, Password bank and Comparetor. During the process, the parity the signal input from microcontroller contains will be checked by the parity check unit and then compared to the certain password pre-stored in the password bank based on the switch signal. The output will show in LED behavior as blick or turn on. If the parity is correct, the LED of parity will blick. If the password is matched, the LED of door will turn on. The heartbeat LED will keep blinking during the process.
+
+--UART
+
+The UART received serial data which begin with start bit(0) and end with stop bit(1) and parity bit from microcontroller and transmit them based on the pulse given by baud rate generator. The transmitter generates a bit stream based on the clock signal, and then the receiver’s goal is to use the pulse from baud rate generator to sample the incoming data in the middle of each bit period. The output from UART will be a 10-bit data signal, including 8-bit ASCII character code, 1 stop bit and 1 parity bit.
+The 8-bit ASCII character code and 1 stop bit will be passed to memory block, and 1 parity bit will be passed to parity check block.
+
+--9600 baud Generator
+
+The 9600 baud Generator is designed t give signal in form of logic-high pulse to UART to help transfering data, since that with a 9600-baud system, one bit requires 1/(9600 bps) ≈ 104.2 µs and the system cannot actually transfer 9600 bits of meaningful data per second. A counter structure will be set up inside the generator. After counting 5000 rising-edge, a pulse will be produced.
+
+
+--Parity Check
+
+The parity check block receives the 1 parity bit from UART, and check whether it is a even parity(1). If the parity is correct, it will send a signal as parity flag to memory block.
+
+--Memory
+
+Memory block receives signal from the UART and the parity check block. Once the  ccorrect parity flag is received, the 8-bit ASCII character data will be stored. After in total 32-bit ASCII character data being store, it will transmit them to comparator block.
