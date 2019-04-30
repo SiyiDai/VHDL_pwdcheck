@@ -1,0 +1,41 @@
+\select@language {english}
+\contentsline {chapter}{\numberline {1}Document Versions}{3}{chapter.1}
+\contentsline {section}{\numberline {1.1}About The Document}{3}{section.1.1}
+\contentsline {section}{\numberline {1.2}Recent Changes}{3}{section.1.2}
+\contentsline {section}{\numberline {1.3}All Changes}{3}{section.1.3}
+\contentsline {chapter}{\numberline {2}Functional Requirements}{4}{chapter.2}
+\contentsline {chapter}{\numberline {3}Implementations}{5}{chapter.3}
+\contentsline {section}{\numberline {3.1}OSI Layer Model}{5}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Description of OSI layers}{5}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Implementations of OSI layers}{6}{subsection.3.1.2}
+\contentsline {subsubsection}{Data link layer}{6}{subsubsection*.2}
+\contentsline {subsubsection}{Physical layer}{6}{subsubsection*.3}
+\contentsline {chapter}{\numberline {4}Specifications}{7}{chapter.4}
+\contentsline {section}{\numberline {4.1}Block Diagram}{7}{section.4.1}
+\contentsline {section}{\numberline {4.2}Diagram Description}{8}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}UART - Receiver}{8}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}9600 Baud Generator}{8}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Parity Check}{8}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.4}Memory}{8}{subsection.4.2.4}
+\contentsline {subsection}{\numberline {4.2.5}Password Bank}{9}{subsection.4.2.5}
+\contentsline {subsection}{\numberline {4.2.6}Comparator}{9}{subsection.4.2.6}
+\contentsline {subsection}{\numberline {4.2.7}Clock Divider}{9}{subsection.4.2.7}
+\contentsline {chapter}{\numberline {5}I/O Specifications}{10}{chapter.5}
+\contentsline {section}{\numberline {5.1}Top-level}{10}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Inputs}{10}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Outputs}{10}{subsection.5.1.2}
+\contentsline {section}{\numberline {5.2}UART-Receiver}{11}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Inputs}{11}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Outputs}{11}{subsection.5.2.2}
+\contentsline {section}{\numberline {5.3}Baud Generator}{11}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Inputs}{11}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}Outputs}{11}{subsection.5.3.2}
+\contentsline {section}{\numberline {5.4}Register}{12}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}Inputs}{12}{subsection.5.4.1}
+\contentsline {subsection}{\numberline {5.4.2}Outputs}{12}{subsection.5.4.2}
+\contentsline {section}{\numberline {5.5}Password Comparator}{12}{section.5.5}
+\contentsline {subsection}{\numberline {5.5.1}Inputs}{12}{subsection.5.5.1}
+\contentsline {subsection}{\numberline {5.5.2}Outputs}{12}{subsection.5.5.2}
+\contentsline {section}{\numberline {5.6}Heart-beat}{13}{section.5.6}
+\contentsline {subsection}{\numberline {5.6.1}Inputs}{13}{subsection.5.6.1}
+\contentsline {subsection}{\numberline {5.6.2}Outputs}{13}{subsection.5.6.2}
